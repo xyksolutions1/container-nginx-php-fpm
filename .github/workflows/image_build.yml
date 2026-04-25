@@ -30,7 +30,7 @@ jobs:
           - core
           - faflopza
           - faflopzaze
-    uses: nfrastack/gha/.github/workflows/container-build_phpfpm.yml@main
+#  DISABLED by dup-sanitise Phase 3: uses: nfrastack/gha/.github/workflows/container-build_phpfpm.yml@main
     with:
       base_image: "ghcr.io/nfrastack/container-nginx"
       php_version: ${{ matrix.build.php_version }}
